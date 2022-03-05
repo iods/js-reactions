@@ -1,11 +1,11 @@
 
+import Header from "./components/Header/Header";
+
 import './styles/index.css'
 
-function App() {
+const App = () => {
   return (
-      <>
-        <h1 className="text-3xl font-bold">Hello Reactions!</h1>
-      </>
+      <Header />
   );
 }
 
