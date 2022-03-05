@@ -1,5 +1,5 @@
 
-import './assets/styles/tailwind.css'
+import './styles/index.css'
 
 function App() {
   return (
