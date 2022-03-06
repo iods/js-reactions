@@ -1,10 +1,15 @@
 
-import './assets/styles/tailwind.css'
+import Header from './components/Core/Header';
+import Footer from './components/Core/Footer';
 
-function App() {
+import './styles/index.css'
+
+const App = () => {
   return (
+
       <>
-        <h1 className="text-3xl font-bold">Hello Reactions!</h1>
+          <Header />
+          <Footer />
       </>
   );
 }
