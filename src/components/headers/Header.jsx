@@ -15,7 +15,7 @@ const Header = () => {
                 </nav>
                 <a className="flex order-first lg:order-none lg:w-1/5 font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0">
                     <img alt="The Dark Society" className="w-10 h-10 p-2" src={ favicon } />
-                    <span className="ml-3 mt-1 text-3xl dark">Reactions</span>
+                    <span className="ml-3 mt-1 text-3xl text-darkstar">Reactions</span>
                 </a>
                 <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
                     <a className="mr-5 hover:text-gray-900">

@@ -2,7 +2,7 @@ import React from "react";
 
 import favicon from '../../assets/img/favicon.svg';
 
-const Header = () => {
+const HeaderTwo = () => {
     return(
         <div className="relative bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -26,4 +26,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default HeaderTwo;

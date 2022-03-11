@@ -4,6 +4,8 @@ import { Component } from "react";
  * Example of a Component from a class.
  *
  * Classes vs. Hooks
+ *
+ * When to render and re-render something.
  */
 class AppComponent extends Component {
 
@@ -30,7 +32,13 @@ class AppComponent extends Component {
                 <div className="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
                     <h1 className="flex-grow sm:pr-16 text-2xl font-medium text-gray-900">{this.state.verse}</h1>
                     <button onClick={() => {
-                        this.setState({verse: 'I\'ll tell you how I became the prince of a town called Bel-Air'})
+                        this.setState(() => {
+                            return {
+                                verse: 'I\'ll tell you how I became the prince of a town called Bel-Air'
+                            }
+                        }, () => {
+                            console.log(this.state); // will run only after everything (shallow merge) is applied
+                        });
                     }} className="flex-shrink-0 text-white bg-sky-500 border-0 py-2 px-8 focus:outline-none hover:bg-sky-600 rounded text-lg mt-10 sm:mt-0">Update</button>
                 </div>
             </div>
