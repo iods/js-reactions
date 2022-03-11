@@ -1,6 +1,6 @@
 
-import Header from './components/Core/Header';
-import Footer from './components/Core/Footer';
+import Header from './components/Layout/Header';
+import AppComponent from "./components/Basics/AppComponent";
 
 import './styles/index.css'
 
@@ -9,7 +9,9 @@ const App = () => {
 
       <>
           <Header />
-          <Footer />
+          <section className="text-gray-700">
+              <AppComponent />
+          </section>
       </>
   );
 }

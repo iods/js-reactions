@@ -2,3 +2,15 @@
 @import './components/index.css';
 @import "./screens/index.css";
 @import './utilities/index.css';
+
+@font-face {
+    font-family: 'fira_code';
+    src: url('../assets/fonts/firacode-retina-webfont.woff2') format('woff2'),
+    url('../assets/fonts/firacode-retina-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dark {
+    font-family: fira_code, serif;
+}
