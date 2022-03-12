@@ -18,7 +18,7 @@ Getting Started
 Instructions on how to download, install, and configure the application.
 
 ```
-$ git clone build https://github.com/iods/js-reactions
+$ git clone https://github.com/iods/js-reactions
 ```
 
 
@@ -29,7 +29,7 @@ $ git clone build https://github.com/iods/js-reactions
 
 ### Known Issues
 
-* Link to any Github issues, or list issues w/ Magento 2 compatibility or Extension compatibility
+ * [React Development Projects](https://github.com/iods/js-reactions/issues/4)
 
 
 ### Installation
