@@ -7,7 +7,16 @@ const Footer = () => {
 
         <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
-
+                <footer className="bg-white" aria-labelledby="footer-heading">
+                    <h2 id="footer-heading" className="sr-only">Footer</h2>
+                    <div className="px-4 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 lg:px-16">
+                        <div className="flex flex-wrap items-baseline lg:justify-center">
+                    <span className="mt-2 text-sm font-light text-gray-500"> Copyright © 2020 - 2021 <a
+                        href="https://wickedlabs.dev" className="mx-2 text-wickedblue hover:text-gray-500"
+                        rel="noopener noreferrer">@wickedlabsHQ</a>. Since 2020 </span>
+                        </div>
+                    </div>
+                </footer>
                 <div className="sm:col-span-2">
                     <a href="#" title="The Dark Society" className="inline-flex items-center">
                         <img src={ icon } alt="" className="w-8" />

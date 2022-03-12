@@ -2,7 +2,7 @@ import React from "react";
 
 import logo from '../../assets/img/favicon.svg';
 
-const Header = () => {
+const HeaderOne = () => {
 
     return (
         <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
@@ -74,4 +74,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default HeaderOne;
