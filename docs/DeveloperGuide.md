@@ -52,3 +52,71 @@ Classes were intended. Hooks solve some problems though.
 
 Render and re-renders parts of the website. All it really does. React and renders and re-renders
 the website.
+
+### Conditionals
+
+Conditional rendering. Here are a few ways to do it.
+
+```jsx
+render() {
+    const Swings = this.state.Swings;
+    return (
+        <>
+            {Swings ? (
+                <p>This is rendering if true.</p>
+            ) : (
+                <p>This is rendering if false.</p>
+            )}
+        </>
+    );
+}
+```
+Here you can do it in the `render()` function but before the JSX is returned.
+```jsx
+if (Swings) {
+    content = <p>This is rendering true</p>
+} else {
+    content = <p>This is rendering if false</p>
+}
+
+return (
+    <>
+        {content}
+    </>
+)
+```
+Else, if just checking whether to render content or not, use the `&&` operator.
+```jsx
+return (
+    <>
+        <p>Welcome!</p>
+        {Swings = 'L' &&
+            <p>You are of a small percentage of golfers!</p>
+        }
+    </>
+)
+```
+Finally, you can try it this way. Just render and call and anonymous function.
+```jsx
+render () {
+  return (
+    <div>
+      {(() => {
+        if (someCase) {
+          return (
+            <div>someCase</div>
+          )
+        } else if (otherCase) {
+          return (
+            <div>otherCase</div>
+          )
+        } else {
+          return (
+            <div>catch all</div>
+          )
+        }
+      })()}
+    </div>
+  )
+}
+```
