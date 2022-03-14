@@ -1,6 +1,50 @@
 React Developer Guide
 =====================
 
+### DOM and VirtualDOM
+
+DOM tree is represented as a tree for sake of children.
+Children have parents, siblings and other children.
+Relationships. The tree. Branches.
+Components should be setup like the tree.
+
+Really expensive to make changes.
+Re-flow. Computationally a lot. Process of putting things
+back on and off the DOM is a lot.
+
+React makes the VirtualDOM. JavaScript makes reflow easy.
+
+Makes two copies. One is a snapshot, the lates copy of what 
+is looks like. Then there is one it will look at to make
+changes against.
+
+setState() then gets called based on all of this.
+
+React wants to setState of things. Rerendering is based on this.
+
+Passing new props -> react rerenders.
+Is everything updated? (looks at the snapshot) highlights the differences
+Updates the changes on the real DOM.
+
+Real DOM goes through reflow and takes form of what it should be.
+
+Reduce total number of changes. optimal way of figuring out what needs to change.
+
+
+### React and React DOM Libraries
+
+What is the difference?
+
+Easier with jsx because React.createElement takes too long.
+
+React is the engine. Diffing/optimizations.
+
+React DOM is what we are rendering to. Specifically the DOM.
+
+Native for mobile. ReactVR.
+
+They all use React engine under the hood.
+
  * Declarative
  * VirtualDOM
  * Props
@@ -10,6 +54,25 @@ React Developer Guide
  1. Decide on Components
  2. Decide on State and where it lives
  3. What changes when state changes
+
+JSX Looks readable and dictates it easier.
+
+### DOM Paint Flashing
+
+VirtualDOM does some comparisons with the DOM.
+
+Chrome dev tools uses some tools for this.
+
+More Tools->Rendering.
+
+Paint is terminology where the DOM "paints" components
+
+Refreshes get green. Reflow is adding and updating.
+
+remember that 'a' value? adding a into the search bar?
+
+Stuff you want to see green and not green. Optimize it.
+
 
 ### Advanced Concepts
 

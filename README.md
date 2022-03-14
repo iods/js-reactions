@@ -24,7 +24,7 @@ $ git clone https://github.com/iods/js-reactions
 
 ### Requirements
 
-* [Git](http://git-scm.com)
+ * [Git](http://git-scm.com)
 
 
 ### Known Issues
@@ -34,16 +34,27 @@ $ git clone https://github.com/iods/js-reactions
 
 ### Installation
 
-Includes a series of step-by-step examples for installation and configuration.
+For the local (non Docker) setup.
+
 ```
+$ yarn install
 $ yarn build
 $ yarn start
 ```
 
+For use with Docker and Docker Compose.
+
+```
+$ docker-compose up -d
+```
+
+
 ## Built With
 
-* [React](http://www.reactjs.org/) - The web frontend framework used
-* [SportsData.io](https://sportsdata.io/) - API for PGA professionals
+ * [React](http://www.reactjs.org/) - The web frontend framework used
+ * [TailWind CSS](https://tailwindcss.com) - The frontend css framework
+ * [Docker](https://docker.com) -  local environment setup
+ * [SportsData.io](https://sportsdata.io/) - API for PGA professionals
 
 
 Reactions
@@ -53,12 +64,14 @@ Reactions
 
  1. PGA Golf Professionals Search
 
+
 Development
 -----------
 
 ### Structure
 
-TOOOODO
+Thinking to put things in "packages". Projects will be packages.
+
 
 Support
 -------
