@@ -9,14 +9,18 @@ My, [iods](https://github.com/iods) / [thedarksociety](https://github.com/thedar
 Table of Contents
 -----------------
 
-- [Developer Guide]
-- [Developer Questions]
-- [Snippets - Practice]
-- [Resources]
+- [Developer Guide](DeveloperGuide.md)
+- [Developer Questions](DeveloperQuestions.md)
+- [Snippets - Practice](Development.md)
+- [Resources](Resources.md)
 
 
 Introduction
 ------------
+
+What is [React](https://reactjs.org)?
+
+It is a clientside JavaScript library for building modern, reactive websites.
 
 React is popular, it isn't cool because it is popular, it is popular because it is cool. Rather than understanding the how I 
 wanted to understand the why. Why React? Why does it work the way it works? What is the purpose of the API designs?
@@ -29,7 +33,11 @@ In the beginning, other languages were pushing MVC (Model, View, Controller) and
 on the other hand chose to isolate view rendering from the model representation. This introduced an entirely new architecture
 to JavaScript frontends: Flux. What made this better than everything else?
 
-### Concepts of React
+It makes building interfaces easier, simply put.
+
+
+Basic Concepts
+--------------
 
 Came out in 2013.
 
@@ -39,7 +47,7 @@ Don't touch the DOM. I will do it.
 
 React to the data to get the display that you want.
 
-#### Component Architecture
+#### Component Architecture & UI
 
 Building sites like lego blocks.
 
