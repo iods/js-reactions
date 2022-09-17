@@ -14,7 +14,7 @@ back on and off the DOM is a lot.
 
 React makes the VirtualDOM. JavaScript makes reflow easy.
 
-Makes two copies. One is a snapshot, the lates copy of what 
+Makes two copies. One is a snapshot, the lates copy of what
 is looks like. Then there is one it will look at to make
 changes against.
 
@@ -181,5 +181,43 @@ render () {
       })()}
     </div>
   )
+}
+```
+
+
+
+
+TypeScript
+----------
+
+```shell
+$ yarn add typescript -D
+```
+Now the `ts.config.json` file with the below setup:
+
+```json
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "dist",
+   "sourceMap": true
+  }
+}
+```
+
+1. use `es2018` syntax when generating the distributable
+2. use the `commonjs` format
+3. generate *.js to the `/dist` folder
+4. generate a source map
+5. include all *.ts files inside `/src` folder
+6. exclude all files inside `/node_modules` folder
+
+Add the following to the `package.json` file.
+```json
+{
+  "scripts": {
+    "build": "tsc"
+  }
 }
 ```
