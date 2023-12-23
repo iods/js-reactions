@@ -1,3 +1,16 @@
-#root {
-    text-align: center;
+@import './styles/base/index.css';
+@import './styles/components/index.css';
+@import './styles/screens/index.css';
+@import './styles/utilities/index.css';
+
+@font-face {
+  font-family: 'fira_code';
+  src: url('./assets/fonts/firacode-retina-webfont.woff2') format('woff2'),
+  url('./assets/fonts/firacode-retina-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-darkstar {
+  font-family: fira_code, serif;
 }
