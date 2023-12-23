@@ -1,0 +1,9 @@
+README.md
+/.idea
+.gitignore
+/.git
+*Dockerfile*
+*docker-compose*
+*node_modules*
+/docs
+/test
