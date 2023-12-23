@@ -1,14 +1,15 @@
-version: '3.8'
+version: '3.9'
 
 services:
-  node:
-    container_name: node
+  app:
+    container_name: js-reactions
+    restart: always
+    environment:
+      - TEST_ARGUMENT=true
     build:
-      context: .
-      dockerfile: ./Dockerfile
-    image: node:react
+      dockerfile: .docker/Dockerfile
     ports:
-      - '80:3000'
+      - '8150:80'
     volumes:
+      - '/usr/src/app/node_modules'
       - '.:/usr/src/app'
-    command: npm start
