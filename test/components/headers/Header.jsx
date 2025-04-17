@@ -1,11 +1,10 @@
 
-import github from '../../assets/img/github.svg';
-import favicon from '../../assets/img/favicon.svg';
+import github from '../../../src/assets/img/github.svg';
+import favicon from '../../../src/assets/img/favicon.svg';
 
 const Header = () => {
 
     return (
-
         <header className="text-gray-700">
 
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -23,6 +22,7 @@ const Header = () => {
                     </a>
                 </div>
             </div>
+
         </header>
     )
 }

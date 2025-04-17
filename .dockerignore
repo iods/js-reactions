@@ -3,7 +3,7 @@ README.md
 .gitignore
 /.git
 *Dockerfile*
-*docker-compose*
 *node_modules*
+*docker-compose*
 /docs
 /test

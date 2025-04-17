@@ -9,4 +9,3 @@ down:
 
 up:
 	make docker/up
-
